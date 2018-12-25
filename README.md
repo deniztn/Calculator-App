@@ -1,2 +1,2 @@
 # Calculator-App
- this application calculates small math operations (addition, subtraction, multiplication, division)
+ this application calculates small math operations in CSharp (addition, subtraction, multiplication, division)
