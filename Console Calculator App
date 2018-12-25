@@ -1,0 +1,84 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Written by erdeniztn
+            start:
+            Console.WriteLine("                               CALCULATOR");
+            Console.WriteLine("                    Which operation option");
+            Console.WriteLine("                    Press button 1 for addition");
+            Console.WriteLine("                    Press button 2 for subtraction process");
+            Console.WriteLine("                    Press button 3 for multiplication");
+            Console.WriteLine("                    Press button 4 for division"); ;
+            Console.Write("             Please enter one of the above numbers for the transaction :");
+                int c = Convert.ToInt16(Console.ReadLine());
+                if (c == 1)
+                {
+                    Console.Clear();
+                    Console.WriteLine("You have chosen to addition:");
+                    Console.Write("Enter the number 1st you want to collect:");
+                    int n1 = Convert.ToInt16(Console.ReadLine());
+                    Console.Write("Enter the number 2nd you want to collect:");
+                    int n2 = Convert.ToInt16(Console.ReadLine());
+                    int result = n1 + n2;
+                    Console.Clear();
+                    Console.Write(n1 + "+" + n2 + "=" + result);
+                }
+                else if (c == 2)
+                {
+                    Console.Clear();
+                    Console.WriteLine("You have chosen the subtraction procedure...");
+                    Console.Write("Please enter the 1st number you would like to remove:");
+                    int n1 = Convert.ToInt16(Console.ReadLine());
+                    Console.Write("Please enter the 2nd number you would like to remove:");
+                    int n2 = Convert.ToInt16(Console.ReadLine());
+                    int result = n1 - n2;
+                    Console.Clear();
+                    Console.Write(n1 + "-" + n2 + "=" + result);
+                }
+                else if (c == 3)
+                {
+                    Console.Clear();
+                    Console.WriteLine("you have chosen the multiplication ...");
+                    Console.Write("Enter the number 1st you want to multiply:");
+                    int n1 = Convert.ToInt16(Console.ReadLine());
+                    Console.Write("Enter the number 2nd you want to multiply:");
+                    int n2 = Convert.ToInt16(Console.ReadLine());
+                    int result = n1 * n2;
+                    Console.Clear();
+                    Console.Write(n1 + "*" + n2 + "=" + result);
+                }
+                else if (c == 4)
+                {
+                    Console.Clear();
+                    Console.WriteLine("You have chosen the division ...");
+                    Console.Write("Enter the number 1st you want to split:");
+                    int n1 = Convert.ToInt16(Console.ReadLine());
+                    Console.Write("Enter the number 2nd you want to split:");
+                    int n2 = Convert.ToInt16(Console.ReadLine());
+                    int result = n1 / n2;
+                    Console.Clear();
+                    Console.Write(n1 + "/" + n2 + "=" + result);
+                }
+                else
+                {
+                    Console.Clear();
+                    Console.Write("no such choice");
+                    string c2;
+                    Console.Write("entered the wrong value. Write start and then press Enter to start again.");
+                    c2 = Console.ReadLine();
+                    if (c2 == "Start" || c2 == "start" || c2 == "START")
+                        Console.Clear();
+                    goto start;
+                }
+                Console.ReadKey();
+        }
+    }
+}
